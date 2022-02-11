@@ -1,0 +1,11 @@
+<v-footer color="primary lighten-1" padless>
+  <v-row no-gutters justify="center">
+    <v-btn v-for="icon in icons" :key="icon.icon" :href="icon.link" color="white"
+      rounded icon>
+      <v-icon size="24px">{{ icon.icon }}</v-icon>
+    </v-btn>
+    <v-col class="primary lighten-1 py-4 text-center white--text" cols="12">
+      2022 — <strong>Google Developer Student Club (Osaka University Chapter)</strong>
+    </v-col>
+  </v-row>
+</v-footer>
