@@ -1,0 +1,51 @@
+{
+  // ============
+  //  Formatter
+  // ============
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "css.validate": false,
+  "scss.validate": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.stylelint": true
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[javascript]": {
+    "editor.formatOnSave": true,
+    "editor.tabSize": 2
+  },
+  "[html]": {
+    "editor.formatOnSave": true,
+    "editor.tabSize": 2
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "editor.tabSize": 2
+  },
+  // =================
+  //  HTML: Formatter
+  // =================
+  // コンテンツを再フォーマットしてはならないタグをコンマで区切ってリストにします。'null' は、既定値の'pre' タグを表します。
+  "html.format.contentUnformatted": "pre,code,textarea",
+  // 既定のHTMLフォーマッタを有効/無効にします
+  "html.format.enable": true,
+  // 末尾に改行を入れます。
+  "html.format.endWithNewline": false,
+  // 直前に改行を1つ入れるタグの、コンマで区切られたリストです。'null'は、既定値の"head, body, /html" を表します。
+  "html.format.extraLiners": "head, body, /html",
+  // 書式設定とインデント{{#foo}}および{{/foo}}。
+  "html.format.indentHandlebars": false,
+  // <head>セクションと<body>セクションをインデントします。
+  "html.format.indentInnerHtml": false,
+  // 1つのチャンク内に保持できる改行の最大数。無制限にするには、'null'を使います。
+  "html.format.maxPreserveNewLines": null,
+  // 要素の前にある既存の改行を保持するかどうか。要素の前でのみ機能し、タグの内側やテキストに対しては機能しません。
+  "html.format.preserveNewLines": true,
+  // 再フォーマットしてはならないタグの、コンマ区切りの一覧。'null'の場合、既定で https://www.w3.org/TR/html5/dom.html#phrasing-content にリストされているすべてのタグになります。
+  "html.format.unformatted": "wbr",
+  // 属性を折り返します。
+  "html.format.wrapAttributes": "auto",
+  // 1行あたりの最大文字数 (0=無効にする)。
+  "html.format.wrapLineLength": 88
+}
