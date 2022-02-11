@@ -1,9 +1,11 @@
+import config from '@/assets/config';
 export default {
   name: 'FooterBasic',
   data: () => ({
-    icons: [
-      { icon: 'mdi-twitter', link: 'https://twitter.com/GDSC_osaka' },
-      { icon: 'mdi-github', link: 'https://github.com/k-shimari/scrapingdaikin' },
-    ],
+    links: config.brand.footer.links,
+    copyright: {
+      year: config.brand.copyrightInfo.year,
+      owner: config.brand.copyrightInfo.owner,
+    }
   }),
 }

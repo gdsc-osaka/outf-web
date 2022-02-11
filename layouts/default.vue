@@ -1,6 +1,7 @@
 <template>
   <v-app>
     <HeaderBasic />
+    <v-sheet elevation="0" height="64" width="100%"></v-sheet>
     <v-main>
       <Nuxt />
     </v-main>

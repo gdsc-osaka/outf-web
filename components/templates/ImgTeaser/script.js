@@ -1,6 +1,9 @@
 export default {
   name: 'ImgTeaser',
-  data: () => ({
-    imgSrc: require("@/assets/image/teaser.jpeg"),
-  }),
+  props: {
+    imgSrc: {
+      type: String,
+      default: require("@/assets/image/teaser.jpeg"),
+    },
+  },
 }

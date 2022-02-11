@@ -1,6 +1,8 @@
+import config from "@/assets/config"
+
 export default {
   name: 'HeaderBasic',
   data: () => ({
-    brandName: "GDSC Osaka Univ."
+    brandName: config.brand.nameShort,
   }),
 }
