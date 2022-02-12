@@ -1,17 +1,17 @@
 <template>
   <v-container fluid>
-    <ImgTeaser :img-src="teaserImgSrc" />
-    <TheASection />
+    <KeyVisualSec />
+    <AboutGonuxtSec />
   </v-container>
 </template>
 
 <script>
-import ImgTeaser from '@/components/templates/ImgTeaser/ImgTeaser.vue'
-import TheASection from '@/pages/sections/TheASection/TheASection.vue'
+import KeyVisualSec from '@/pages/sections/KeyVisualSec/KeyVisualSec.vue'
+import AboutGonuxtSec from '@/pages/sections/AboutGonuxtSec/AboutGonuxtSec.vue'
 
 export default {
   name: 'IndexPage',
-  components: { ImgTeaser, TheASection },
+  components: { KeyVisualSec, AboutGonuxtSec },
   data: () => ({
     teaserImgSrc: require('@/assets/image/teaser.jpeg'),
   }),

@@ -1,4 +1,6 @@
-# nuxt-templates
+# GONuxT: GDSC Osaka Univ. Nuxt.js Template Library
+
+gonuxt is a template library for nuxt.js build by Google Developer Student Club Osaka University Chapter.
 
 ## Build Setup
 
@@ -19,6 +21,16 @@ $ npm run generate
 ```
 
 For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).
+
+## 環境構築編
+
+### VSCode Extention
+
+- [Stylelint](https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint)
+- [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+- [vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur)
+
+---
 
 ## Special Directories
 
@@ -67,13 +79,3 @@ More information about the usage of this directory in [the documentation](https:
 This directory contains your Vuex store files. Creating a file in this directory automatically activates Vuex.
 
 More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/store).
-
----
-
-## 環境構築編
-
-### VSCode Extention
-
-- [Stylelint](https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint)
-- [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
-- [vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur)

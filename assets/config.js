@@ -1,7 +1,7 @@
 export default {
   brand: {
-    name: 'GDSC Osaka Univ. - Nuxt.js Templates Project',
-    nameShort: "GNuxT",
+    name: 'GONuxT',
+    nameShort: "GONuxT",
     footer: {
       links: [
         { icon: 'mdi-twitter', link: 'https://twitter.com/GDSC_osaka' },
