@@ -1,5 +1,5 @@
 <v-app-bar dark dense height="64" fixed>
-  <v-toolbar-title>{{brandName}}</v-toolbar-title>
+  <v-toolbar-title :class="brandNameFontWeight">{{brandName}}</v-toolbar-title>
   <v-spacer></v-spacer>
   <router-link to="/" class="nt-app-bar-link">
     <v-btn elevation="0">Home</v-btn>
