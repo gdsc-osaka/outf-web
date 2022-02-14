@@ -6,8 +6,8 @@
 </template>
 
 <script>
-import KeyVisualSec from '@/pages/sections/KeyVisualSec/KeyVisualSec.vue'
-import AboutGonuxtSec from '@/pages/sections/AboutGonuxtSec/AboutGonuxtSec.vue'
+import KeyVisualSec from '@/sections/KeyVisualSec/KeyVisualSec.vue'
+import AboutGonuxtSec from '@/sections/AboutGonuxtSec/AboutGonuxtSec.vue'
 
 export default {
   name: 'IndexPage',
