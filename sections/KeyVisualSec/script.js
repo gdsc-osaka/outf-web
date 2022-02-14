@@ -1,4 +1,4 @@
-import GONuxTLogo from '@/components/atoms/GONuxTLogo/GONuxTLogo.vue';
+import GONuxTLogo from '@/components/atoms/GONuxTLogo';
 
 export default {
   name: 'KeyVisualSec',

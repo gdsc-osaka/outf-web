@@ -10,8 +10,8 @@
 </template>
 
 <script>
-import HeaderBasic from '@/components/organisms/HeaderBasic/HeaderBasic.vue'
-import FooterBasic from '@/components/organisms/FooterBasic/FooterBasic.vue'
+import HeaderBasic from '@/components/organisms/HeaderBasic'
+import FooterBasic from '@/components/organisms/FooterBasic'
 
 export default {
   name: 'DefaultLayout',
