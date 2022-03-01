@@ -1,19 +1,28 @@
 <template>
   <v-container fluid>
-    <KeyVisualSec />
-    <AboutGonuxtSec />
+    <GdscGlobalSec />
+    <GdscOsakaSec />
+    <JoinUsSec />
+    <MembersSec />
+    <ContactSec />
   </v-container>
 </template>
 
 <script>
-import KeyVisualSec from '@/sections/KeyVisualSec/KeyVisualSec.vue'
-import AboutGonuxtSec from '@/sections/AboutGonuxtSec/AboutGonuxtSec.vue'
+import GdscGlobalSec from '@/sections/GdscGlobalSec'
+import GdscOsakaSec from '@/sections/GdscOsakaSec'
+import JoinUsSec from '@/sections/JoinUsSec'
+import MembersSec from '@/sections/MembersSec'
+import ContactSec from '@/sections/ContactSec'
 
 export default {
   name: 'IndexPage',
-  components: { KeyVisualSec, AboutGonuxtSec },
-  data: () => ({
-    teaserImgSrc: require('@/assets/image/teaser.jpeg'),
-  }),
+  components: {
+    GdscGlobalSec,
+    GdscOsakaSec,
+    JoinUsSec,
+    MembersSec,
+    ContactSec,
+  },
 }
 </script>

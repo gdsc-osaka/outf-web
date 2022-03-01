@@ -1,7 +1,7 @@
 export default {
   brand: {
-    name: 'GONuxT',
-    nameShort: "GONuxT",
+    name: 'GDSC',
+    nameShort: "GDSC Osaka Univ.",
     footer: {
       links: [
         { icon: 'mdi-twitter', link: 'https://twitter.com/GDSC_osaka' },
@@ -14,15 +14,15 @@ export default {
       owner: 'Google Developer Student Club (Osaka University Chapter)',
     },
   },
-  light: {
-    primary: '#536DFE',
-    secondary: '#FF5C93',
-    error: '#FF4081',
-    warning: '#FFC260',
-    success: '#3CD4A0',
-    info: '#9013FE',
-    textColor: '#B9B9B9',
-    iconColor: '#FFFF59',
-    grayBold: '#4a4a4a'
-  }
+  // light: {
+  //   primary: '#4285F4', // Google Blue
+  //   secondary: '#676c72', // Google Grey
+  //   error: '#E84435', // Google Red
+  //   warning: '#FBBC04', // Google Yellow
+  //   success: '#0f9d58', // Google Green
+  //   info: '#4285F4',
+  //   textColor: '#404040',
+  //   iconColor: '#FFFF59',
+  //   grayBold: '#4a4a4a'
+  // }
 }

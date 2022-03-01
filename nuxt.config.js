@@ -1,9 +1,7 @@
-import colors from 'vuetify/es5/util/colors'
-
 // only add `router.base = '/<repository-name>/'` if `DEPLOY_ENV` is `GH_PAGES`
 const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
   router: {
-    base: '/gonuxt/'
+    base: '/official-web/'
   }
 } : {}
 
@@ -36,7 +34,15 @@ export default {
   plugins: [],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
-  components: true,
+  components: {
+    dirs: [
+      '~/gonuxt/components/atoms/',
+      '~/gonuxt/components/molecules',
+      '~/gonuxt/components/organisms',
+      '~/components',
+      '~/sections/',
+    ]
+  },
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
@@ -49,7 +55,9 @@ export default {
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [],
+  modules: [
+    '@/modules/custom-generate.js',
+  ],
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
   vuetify: {

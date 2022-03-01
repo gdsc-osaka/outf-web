@@ -1,0 +1,15 @@
+@import '@/assets/styles/app';
+
+.gnt-intro-a-contents {
+  line-height: 1.6em;
+
+  .gnt-intro-a-btn {
+    text-transform: none;
+
+    // NOTE: If you want to set custom color or photo,
+    // - step.1: set these values.
+    // - step.2: set background-color or background (image);
+    // background-color: $primary !important;
+    // background: url('~@/assets/img/gonuxt/sample01.jpg');
+  }
+}

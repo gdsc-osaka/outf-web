@@ -1,36 +1,52 @@
 @import '~vuetify/src/styles/styles.sass';
 
 // Sidebar //
-$drawer-items-padding:                     32px !default;
-$navigation-drawer-mini-variant-width:     96px!important;
+$drawer-items-padding: 32px !default;
+$navigation-drawer-mini-variant-width: 96px !important;
 
 // Layout //
-$body-bg: #F6F7FF !default;
-$content-padding:                           24px;
+$body-bg: #f6f7ff !default;
+$content-padding: 24px;
+
+// Google Colors //
+$google-blue: #4285f4;
+$google-red: #e84435;
+$google-green: #0f9d58;
+$google-yellow: #fbbc04;
+$google-grey: #676c72;
+$google-dark-grey: #404040;
+
+$google-lt-blue: #bbdefb;
+$google-lt-red: #ffcdd2;
+$google-lt-green: #c8e6c9;
+$google-lt-yellow: #ffecb3;
+$google-lt-grey: #f9f9f9;
 
 // Colors //
-$primary:           #536DFE;
-$secondary:         #FF5C93;
-$error:             #ff4081;
-$warning:           #FFC260;
-$success:           #3CD4A0;
-$info:              #9013FE;
-$text-color:        #6e6e6e;
-$text-grey:         #b9b9b9;
-$title-grey:        #4a4a4a;
+$primary: $google-blue;
+$secondary: $google-red;
+$error: #ff4081;
+$warning: $google-yellow;
+$success: $google-green;
+$info: #9013fe;
+$text-color: #6e6e6e;
+$text-grey: #b9b9b9;
+$title-grey: $google-dark-grey;
 
-$card-title-color:  $text-color;
+$card-title-color: $text-color;
 
 // Typography //
-$h1-font-size:                3rem !default;      // 28px
-$h2-font-size:                2rem !default;       // 24px
-$h3-font-size:                1.64rem !default;     // 22px
-$h4-font-size:                1.5rem !default;     // 20px
-$h5-font-size:                1.285rem !default;         // 16px
-$h6-font-size:                1.142rem !default;     // 14px
+$h1-font-size: 3rem !default; // 28px
+$h2-font-size: 2rem !default; // 24px
+$h3-font-size: 1.64rem !default; // 22px
+$h4-font-size: 1.5rem !default; // 20px
+$h5-font-size: 1.285rem !default; // 16px
+$h6-font-size: 1.142rem !default; // 14px
 
 // Card //
-$card-shadow: 0 3px 11px 0 #E8EAFC, 0 3px 3px -2px #B2B2B21A, 0 1px 8px 0 #9A9A9A1A;
+$card-shadow: 0 3px 11px 0 #e8eafc, 0 3px 3px -2px #b2b2b21a,
+  0 1px 8px 0 #9a9a9a1a;
 
 // Buttons //
-$button-shadow: 0px 3px 11px 0px #E8EAFC, 0 3px 3px -2px #B2B2B21A, 0 1px 8px 0 #9A9A9A1A;
+$button-shadow: 0px 3px 11px 0px #e8eafc, 0 3px 3px -2px #b2b2b21a,
+  0 1px 8px 0 #9a9a9a1a;
