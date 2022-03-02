@@ -1,17 +1,20 @@
 export default {
   brand: {
-    name: 'GDSC',
-    nameShort: "GDSC Osaka Univ.",
+    name: 'GoNuxt',
+    nameShort: 'GoNuxt Tutorial',
     footer: {
       links: [
-        { icon: 'mdi-twitter', link: 'https://twitter.com/GDSC_osaka' },
-        { icon: 'mdi-instagram', link: 'https://www.instagram.com/gdsc_osaka/' },
+        { icon: 'mdi-twitter', link: 'https://twitter.com/' },
+        {
+          icon: 'mdi-instagram',
+          link: 'https://www.instagram.com/',
+        },
         { icon: 'mdi-github', link: 'https://github.com/gdsc-osaka' },
       ],
     },
     copyrightInfo: {
       year: 2022,
-      owner: 'Google Developer Student Club (Osaka University Chapter)',
+      owner: 'Sample Club',
     },
   },
   // light: {
