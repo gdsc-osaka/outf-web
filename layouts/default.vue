@@ -10,8 +10,8 @@
 </template>
 
 <script>
-import GdscHeader from '@/sections/app/TheHeader'
-import GdscFooter from '@/sections/app/TheFooter'
+import TheHeader from '@/sections/app/TheHeader'
+import TheFooter from '@/sections/app/TheFooter'
 
 export default {
   name: 'DefaultLayout',
