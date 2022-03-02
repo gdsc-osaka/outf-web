@@ -1,6 +1,7 @@
 <template>
   <v-container fluid>
     <GonuxtSec />
+    <TutorialSec />
   </v-container>
 </template>
 
