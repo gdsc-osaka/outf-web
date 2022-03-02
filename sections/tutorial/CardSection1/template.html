@@ -1,0 +1,37 @@
+<section class="gnt-sec-2">
+  <v-container fluid>
+    <section class="gnt-sec-3">
+      <v-row>
+        <v-col cols="12">
+          <h2>With horizontal scroll</h2>
+          <p>
+            Add "flex-nowrap" and "overflow-auto" into the class of the v-row
+            element.
+          </p>
+        </v-col>
+      </v-row>
+      <v-row
+        class="d-flex flex-nowrap justify-left align-center gont-tile-layout-template gnt-card-gallery-horizontal-list overflow-auto"
+      >
+        <v-col
+          cols="12"
+          sm="6"
+          md="4"
+          class="pa-md-5 gonuxt-tile"
+          v-for="tile in tiles2Col"
+          :key="tile.title"
+        >
+          <nuxt-link to="/" class="text-decoration-none">
+            <PhotoCardA
+              :imgSrc="tile.imgSrc"
+              :title="tile.title"
+              :titleSize="tile.titleSize"
+              :txtPosition="tile.txtPosition"
+              :link="tile.link"
+            />
+          </nuxt-link>
+        </v-col>
+      </v-row>
+    </section>
+  </v-container>
+</section>
