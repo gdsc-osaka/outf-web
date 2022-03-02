@@ -1,20 +1,20 @@
 <template>
   <v-app>
-    <GdscHeader />
+    <TheHeader />
     <v-sheet elevation="0" height="64" width="100%"></v-sheet>
     <v-main>
       <Nuxt />
     </v-main>
-    <GdscFooter />
+    <TheFooter />
   </v-app>
 </template>
 
 <script>
-import GdscHeader from '@/sections/app/GdscHeader'
-import GdscFooter from '@/sections/app/GdscFooter'
+import GdscHeader from '@/sections/app/TheHeader'
+import GdscFooter from '@/sections/app/TheFooter'
 
 export default {
   name: 'DefaultLayout',
-  components: { GdscHeader, GdscFooter },
+  components: { TheHeader, TheFooter },
 }
 </script>
