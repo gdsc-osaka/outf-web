@@ -1,5 +1,5 @@
 export default {
-  name: 'CardSection1',
+  name: 'GallerySection',
   data: () => ({
     tiles2Col: [],
     tiles4Col: [],
