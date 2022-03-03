@@ -1,8 +1,8 @@
 <template>
   <section class="my-6 py-6">
     <v-divider class="my-6"></v-divider>
-    <TutorialCardSection1 />
-    <TutorialTextSection1 />
+    <EventCardSection1 />
+    <EventTextSection1 />
     <GonuxtSubSection3 />
   </section>
 </template>
