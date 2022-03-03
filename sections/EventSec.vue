@@ -8,7 +8,7 @@
 </template>
 <script scoped>
 export default {
-  name: 'TutorialSec',
+  name: 'EventSec',
 }
 </script>
 <style lang="scss"></style>
