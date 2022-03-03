@@ -1,7 +1,7 @@
 <template>
   <section class="my-6 py-6">
     <v-divider class="my-6"></v-divider>
-    <EventCardSection1 />
+    <EventGallerySection />
     <EventTextSection1 />
     <GonuxtSubSection3 />
   </section>
