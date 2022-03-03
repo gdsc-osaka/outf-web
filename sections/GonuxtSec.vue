@@ -11,4 +11,4 @@ export default {
   name: 'GonuxtSec',
 }
 </script>
-<style lang="scss"></style>
+<style scoped lang="scss"></style>
