@@ -1,7 +1,7 @@
 <template>
   <v-container fluid>
-    <GonuxtSec />
     <EventSec />
+    <GonuxtSec />
   </v-container>
 </template>
 
