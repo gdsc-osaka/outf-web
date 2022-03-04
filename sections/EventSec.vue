@@ -3,6 +3,7 @@
     <v-divider class="my-6"></v-divider>
     <EventGallerySection />
     <EventDetailSection />
+    <EventIntroSection />
   </section>
 </template>
 <script scoped>
