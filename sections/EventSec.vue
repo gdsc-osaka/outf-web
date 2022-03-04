@@ -2,8 +2,7 @@
   <section class="my-6 py-6">
     <v-divider class="my-6"></v-divider>
     <EventGallerySection />
-    <!-- <EventTextSection1 />
-    <GonuxtSubSection3 /> -->
+    <EventDetailSection />
   </section>
 </template>
 <script scoped>
