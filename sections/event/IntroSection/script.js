@@ -1,6 +1,6 @@
 export default {
   name: 'IntroSection',
   data: () => ({
-    imgSrc: require('@/assets/gonuxt/img/sample01.jpg'),
+    imgSrc: require('@/assets/event/img/sakura.jpg'),
   }),
 }
