@@ -1,9 +1,9 @@
 <template>
   <section class="my-6 py-6">
     <v-divider class="my-6"></v-divider>
-    <EventGallerySection />
-    <EventDetailSection />
     <EventIntroSection />
+    <EventDetailSection />
+    <EventGallerySection />
   </section>
 </template>
 <script scoped>
