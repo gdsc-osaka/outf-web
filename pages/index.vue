@@ -1,7 +1,7 @@
 <template>
   <v-container fluid>
-    <ShinkanjohoSec />
-    <GonuxtSec />
+    <AutoSwitchSec/>
+    <ShinkanjohoSec/>
   </v-container>
 </template>
 
