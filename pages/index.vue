@@ -1,5 +1,6 @@
 <template>
   <v-container fluid>
+    <ShinkanjohoSec />
     <GonuxtSec />
   </v-container>
 </template>
