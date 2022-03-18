@@ -1,6 +1,7 @@
 <template>
   <v-container fluid>
-    <GonuxtSec />
+    <AutoSwitchSec/>
+    
   </v-container>
 </template>
 

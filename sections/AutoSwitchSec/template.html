@@ -1,0 +1,25 @@
+<section>
+  <div class="slide-outer" id="slide-outers">
+    <transition name="fade">
+      <div v-for="slide in Slides" :key="slide.id" class="slide-inner">
+        <img class="slide-img" :src="slide.img" />
+      </div>
+    </transition>
+    <div class="slide-element">
+      <p class="font-weight-black">大阪大学陸上競技部</p>
+      <img
+        id="ass-outf-logo"
+        z-index="199"
+        max-height="150"
+        max-width="250"
+        src='@/assets/outf-Img/intro/logo.png'
+      ></img>
+      <h1 class="mb-5">新歓ページ</h1>
+  
+    </div>
+
+    <p class="scroll js-scroll">
+      <a href="#" v-on:click.stop.prevent="openWindow">btnTxt</a>
+    </p>
+  </div>
+</section>
