@@ -1,0 +1,123 @@
+@import '@/assets/styles/app';
+#ass-outf-logo{
+  width :100px;
+  height: 100px;
+  
+}
+
+.slide-outer {
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
+  height: calc(80vh - 64px);
+  display: flex;
+}
+
+.slider-inner {
+  position: absolute;
+  width: 100vw;
+  height: calc(80vh - 64px);
+}
+
+.slide-img {
+  width: 100vw;
+  height: calc(80vh - 64px);
+  object-fit: cover;
+}
+
+.fade-enter-active {
+  transition: all 4s ease;
+}
+
+.fade-leave-active {
+  transition: all 4s ease;
+  position: absolute;
+}
+
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.slide-element {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 0;
+  color: white;
+  text-align: center;
+  letter-spacing: 0.5em;
+}
+
+.slide-element h1 {
+  font-size: 5vmax;
+  font-weight: bold;
+  letter-spacing: 0.15em;
+}
+
+.slide-element h2 {
+  font-size: 2vmax;
+  font-weight: bold;
+  letter-spacing: 0.15em;
+}
+
+.slide-element p {
+  font-size: 2vmax;
+}
+
+.scroll {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+  letter-spacing: 0.15em;
+  margin-bottom: 5px;
+  a {
+    position: relative;
+    display: inline-block;
+    font-size: 1.5vmax;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    padding: 0 0 50px;
+    opacity: 0.8;
+    &:before {
+      content: '';
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      left: 0;
+      right: 0;
+      bottom: 25px;
+      margin: auto;
+      border-bottom: 4px solid white;
+      border-right: 4px solid white;
+      transform: rotate(45deg);
+      animation: move 2s infinite;
+    }
+  }
+}
+
+@keyframes move {
+  0% {
+    transform: rotate(45deg) translate(0, 0);
+  }
+  20% {
+    transform: rotate(45deg) translate(8px, 8px);
+  }
+  40% {
+    transform: rotate(45deg) translate(0, 0);
+  }
+}
+
+p {
+  text-shadow: 1px 2px 5px black; 
+}
+
+h1 {
+  text-shadow: 1px 2px 5px black; 
+}

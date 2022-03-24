@@ -1,7 +1,8 @@
 <template>
   <v-container fluid>
-    <AutoSwitchSec/>
-    <ShinkanjohoSec/>
+    <AutoSwitchSec />
+    <ShinkanjohoSec />
+    <ResultCardSec />
   </v-container>
 </template>
 
