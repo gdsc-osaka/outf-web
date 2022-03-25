@@ -1,0 +1,20 @@
+<section>
+<h1>リザルト</h1>
+  <v-sheet>
+    <v-slide-group multiple center-active>
+      <v-slide-item v-for="item in items" :key="item.name">
+        <v-card class="card-item" color='primary'>
+          <v-row class="mx-auto my-auto">
+            <v-card-text class="card-text text-h4 font-weight-bold">
+            {{ item.name }}
+            </v-card-text>
+          </v-row>        
+        </v-card>
+      </v-slide-item>
+    </v-slide-group>
+  </v-sheet>
+</section>
+
+
+
+
