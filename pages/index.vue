@@ -5,6 +5,7 @@
       <ShinkanjohoSec />
       <ResultCardSec />
       <MemberSec />
+      <QandASec />
     </v-container>
   </div>
 </template>
