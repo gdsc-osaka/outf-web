@@ -1,4 +1,5 @@
 // only add `router.base = '/<repository-name>/'` if `DEPLOY_ENV` is `GH_PAGES`
+import colors from 'vuetify/lib/util/colors'
 const routerBase =
   process.env.DEPLOY_ENV === 'GH_PAGES'
     ? {
@@ -102,6 +103,23 @@ export default {
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
   vuetify: {
     customVariables: ['~/assets/styles/app.scss'],
+    theme: {
+      dark: false,
+      themes: {
+        light: {
+          primary: '#353d9d',
+          accent: '#9d359d',          
+          secondary: '#676c72',
+          info: colors.teal.lighten1,
+          warning: '#fbbc04',
+          error: colors.deepOrange.accent4,
+          success: '#359d41'
+        }
+      },
+      options: {
+        customProperties: true
+      }
+    },
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

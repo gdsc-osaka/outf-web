@@ -13,6 +13,14 @@ export default {
         { id: 4, img: require('@/assets/outf-Img/intro/sinkan-web5.jpg') },
         { id: 5, img: require('@/assets/outf-Img/intro/sinkan-web6.jpg') },
         /*
+        { id: 6, img: require('@/assets/outf-Img/intro/sinkan-web-mono.jpg') },
+        { id: 7, img: require('@/assets/outf-Img/intro/sinkan-web2-mono.jpg') },
+        { id: 8, img: require('@/assets/outf-Img/intro/sinkan-web3-mono.jpg') },
+        { id: 9, img: require('@/assets/outf-Img/intro/sinkan-web4-mono.jpg') },
+        { id: 10, img: require('@/assets/outf-Img/intro/sinkan-web5-mono.jpg') },
+        { id: 11, img: require('@/assets/outf-Img/intro/sinkan-web6-mono.jpg') },
+        
+        /*
         { id: 0, img: require('@/assets/outf-Img/intro/sinkan-web-mono.jpg') },
         { id: 1, img: require('@/assets/outf-Img/intro/sinkan-web2-mono.jpg') },
         { id: 2, img: require('@/assets/outf-Img/intro/sinkan-web3-mono.jpg') },
