@@ -1,0 +1,40 @@
+<v-container>
+  <v-row>
+    <v-col cols="12">
+      <h2 style="text-align: center">メンバー紹介</h2>
+      <p style="text-align: center">
+        陸上部員の具体的な自己ベストを知りたい方はこちらをご覧ください。
+      </p>
+    </v-col>
+  </v-row>
+  <v-row class="my-8" no-gutters>
+    <MemberCardB
+      name="阪大 太郎"
+      txt="開発担当"
+      :imgSrc="require('@/assets/gonuxt/img/sample02.jpg')"
+      txt2="初めまして，休日は本を読んだり，散歩をしたりします．"
+      :imgSrc2="require('@/assets/gonuxt/img/sample01.jpg')"
+    />
+    <MemberCardB />
+    <MemberCardB />
+    <MemberCardB />
+    <MemberCardB />
+    <MemberCardB />
+  </v-row>
+  <v-row justify="center" class="text-center" no-gutters>
+    <v-col cols="12" sm="6">
+      <div class="mb-2">
+        <v-btn
+          style="text-transform: none"
+          large
+          rounded
+          class="white--text"
+          :color="btnColor"
+          :to="link"
+        >
+          {{ btnTxt }}
+        </v-btn>
+      </div>
+    </v-col>
+  </v-row>
+</v-container>

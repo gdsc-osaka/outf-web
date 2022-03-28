@@ -4,6 +4,7 @@
     <v-container>
       <ShinkanjohoSec />
       <ResultCardSec />
+      <MemberSec />
     </v-container>
   </div>
 </template>
