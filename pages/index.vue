@@ -2,6 +2,9 @@
   <v-container fluid>
     <AutoSwitchSec/>
     <ShinkanjohoSec/>
+    <QandASec/>
+    
+
   </v-container>
 </template>
 
