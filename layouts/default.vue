@@ -5,16 +5,16 @@
     <v-main>
       <Nuxt />
     </v-main>
-    <TheFooter />
+    <ConSec />
   </v-app>
 </template>
 
 <script>
+import ConSec    from '@/sections/ConSec/ConSec'
 import TheHeader from '@/sections/app/TheHeader'
-import TheFooter from '@/sections/app/TheFooter'
 
 export default {
   name: 'DefaultLayout',
-  components: { TheHeader, TheFooter },
+  components: { TheHeader,ConSec},
 }
 </script>
