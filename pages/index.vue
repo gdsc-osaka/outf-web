@@ -2,6 +2,7 @@
   <div>
     <AutoSwitchSec />
     <v-container>
+      <MessageSec />
       <ShinkanjohoSec />
       <ResultCardSec />
       <MemberSec />
