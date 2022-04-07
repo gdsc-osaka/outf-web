@@ -1,6 +1,11 @@
 <template>
   <section class="my-6 py-6">
-    <h2 style="text-align: center">新歓情報</h2>
+    <h2
+      class="text-center font-weight-bold secondary--text text-h2 text--darken-2"
+    >
+      新歓情報
+    </h2>
+
     <ShinkanEventCard />
   </section>
 </template>
