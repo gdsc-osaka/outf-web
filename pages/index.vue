@@ -6,13 +6,18 @@
       <ShinkanjohoSec />
       <ResultCardSec />
       <MemberSec />
+      <GakuRecSec/>
       <QandASec />
+      
     </v-container>
+    
   </div>
 </template>
 
 <script>
+import GakuRecSec from '../sections/GakuRecSec/GakuRecSec.vue'
 export default {
+  components: { GakuRecSec },
   name: 'IndexPage',
 }
 </script>

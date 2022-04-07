@@ -1,31 +1,27 @@
 <template>
-  <v-col cols="12" sm="2">
-    <div class="card" @mouseover="imageChange()" @mouseleave="imageReturn()">
-      <div class="card2">
-        <div :class="class1">
-          <v-layout justify-center>
-            <v-avatar size="100">
-              <v-img :src="imgSrc" />
-            </v-avatar>
-          </v-layout>
-          <small style="text-align: center">{{ txt }}</small>
-          <h3 align="center">{{ name }}</h3>
-        </div>
+  <div class="card my-3" @mouseover="imageChange()" @mouseleave="imageReturn()">
+    <div class="card2">
+      <div :class="class1">
+        <v-layout justify-center>
+          <v-avatar size="100">
+            <v-img :src="imgSrc" />
+          </v-avatar>
+        </v-layout>
+        <small style="text-align: center">{{ txt }}</small>
+        <h3 align="center">{{ name }}</h3>
+      </div>
 
-        <div :class="class2">
-          <v-layout justify-center>
-            <v-avatar size="100" class="img-hover">
-              <v-img :src="imgSrc2" />
-            </v-avatar>
-          </v-layout>
-          <small style="font-weight: bold; text-align: center">{{
-            name
-          }}</small>
-          <small style="text-align: center"><br />{{ txt2 }}</small>
-        </div>
+      <div :class="class2">
+        <v-layout justify-center>
+          <v-avatar size="100" class="img-hover">
+            <v-img :src="imgSrc2" />
+          </v-avatar>
+        </v-layout>
+        <small class="pt-3" style="font-weight: bold; text-align: center">{{ name }}</small>
+        <small style="text-align: center"><br />{{ txt2 }}</small>
       </div>
     </div>
-  </v-col>
+  </div>
 </template>
 
 <script scoped>

@@ -1,0 +1,20 @@
+@import '@/assets/styles/app';
+
+.txt-img-box {
+  background-color: #1565c0 !important;
+  border-color: #1565c0 !important;
+
+  text-align: center;
+  color: #ffffff;
+
+  .img-box {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .txt-box {
+    align-items: center !important;
+  }
+}

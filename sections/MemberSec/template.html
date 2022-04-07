@@ -1,40 +1,72 @@
 <v-container>
-  <v-row>
-    <v-col cols="12">
-      <h2 style="text-align: center">メンバー紹介</h2>
-      <p style="text-align: center">
-        陸上部員の具体的な自己ベストを知りたい方はこちらをご覧ください。
-      </p>
-    </v-col>
-  </v-row>
-  <v-row class="my-8" no-gutters>
-    <MemberCardB
-      name="阪大 太郎"
-      txt="開発担当"
-      :imgSrc="require('@/assets/gonuxt/img/sample02.jpg')"
-      txt2="初めまして，休日は本を読んだり，散歩をしたりします．"
-      :imgSrc2="require('@/assets/gonuxt/img/sample01.jpg')"
-    />
-    <MemberCardB />
-    <MemberCardB />
-    <MemberCardB />
-    <MemberCardB />
-    <MemberCardB />
-  </v-row>
-  <v-row justify="center" class="text-center" no-gutters>
-    <v-col cols="12" sm="6">
-      <div class="mb-2">
-        <v-btn
-          style="text-transform: none"
-          large
-          rounded
-          class="white--text"
-          :color="btnColor"
-          href="http://www.osaka-u-athlete-club.com/OUTF/member-top/%E9%83%A8%E5%93%A1%E4%B8%80%E8%A6%A7/"
-        >
-          {{ btnTxt }}
-        </v-btn>
-      </div>
-    </v-col>
-  </v-row>
+  <section class="gnt-sec-2">
+    <v-row>
+      <v-col cols="12">
+        <h2 class="text-center font-weight-bold">メンバー紹介</h2>
+        <p style="text-align: center">
+          陸上部員の具体的な自己ベストを知りたい方はこちらをご覧ください。
+        </p>
+      </v-col>
+    </v-row>
+    <div class="hidden-sm-and-down">
+      <v-row class="py-2 justify-center" no-gutters>
+        <v-col cols="4" sm="2" v-for="member in members" :key="member.name">
+          <MemberCardB
+            :name="member.name"
+            :txt="member.txt"
+            :imgSrc="member.imgSrc"
+            :txt2="member.txt2"
+            :imgSrc2="member.imgSrc2"
+          />
+        </v-col>
+      </v-row>
+    </div>
+
+    <div class="hidden-md-and-up">
+      <v-sheet class="my-4">
+        <v-slide-group class="py-4">
+          <v-slide-item
+            v-for="member in members"
+            :key="member.name"
+            v-slot="{ active, toggle }"
+          >
+            <div class="mx-2">
+              <v-card
+                class="ma-0 pa-2"
+                height="200"
+                width="200"
+                flat
+                style="box-shadow: none !important"
+              >
+                <MemberCardB
+                  :name="member.name"
+                  :txt="member.txt"
+                  :imgSrc="member.imgSrc"
+                  :txt2="member.txt2"
+                  :imgSrc2="member.imgSrc2"
+                />
+              </v-card>
+            </div>
+          </v-slide-item>
+        </v-slide-group>
+      </v-sheet>
+    </div>
+
+    <v-row justify="center" class="text-center" no-gutters>
+      <v-col cols="12" sm="6">
+        <div class="mb-2">
+          <v-btn
+            style="text-transform: none"
+            large
+            rounded
+            class="white--text"
+            :color="btnColor"
+            href="http://www.osaka-u-athlete-club.com/OUTF/member-top/%E9%83%A8%E5%93%A1%E4%B8%80%E8%A6%A7/"
+          >
+            {{ btnTxt }}
+          </v-btn>
+        </div>
+      </v-col>
+    </v-row>
+  </section>
 </v-container>
