@@ -4,9 +4,13 @@
       <v-img class="align-end rounded" :src="imgSrc" :aspect-ratio="12 / 9">
       </v-img>
     </div>
-
-    <v-card-actions class="pa-5">
-      <div class="text-left">
+    <v-card-actions class="pb-0">
+      <v-sheet color="secondary lighten-4" class="px-2" rounded>
+        {{ date }}
+      </v-sheet>
+    </v-card-actions>
+    <v-card-actions class="px-4">
+      <div class="text-left font-weight-bold">
         {{ title }}
       </div>
       <v-dialog transition="dialog-top-transition" max-width="600">
@@ -28,7 +32,7 @@
               {{ title }}
             </v-toolbar>
             <v-card-text>
-              <div class="text-body-1 pa-12">
+              <div class="text-body-1 pa-6">
                 {{ detail }}
               </div>
             </v-card-text>
@@ -75,6 +79,10 @@ export default {
     detail: {
       type: String,
       default: 'Hello world!',
+    },
+    date: {
+      type: String,
+      default: '4/2',
     },
   },
   data: () => ({

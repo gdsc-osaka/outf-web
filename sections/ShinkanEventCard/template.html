@@ -1,11 +1,13 @@
 <section class="gnt-sec-2">
   <v-container fluid>
     <section class="gnt-sec-3">
-      <v-row class="d-flex justify-left align-center gont-tile-layout-template">
+      <v-row
+        class="d-flex justify-center align-center gont-tile-layout-template"
+      >
         <v-col
           cols="12"
           sm="6"
-          md="4"
+          md="3"
           class="pa-md-5"
           v-for="card in Cards2Col"
           :key="card.title"
@@ -15,6 +17,7 @@
             :title="card.title"
             :btnTxt="card.btnTxt"
             :detail="card.detail"
+            :date="card.date"
           />
         </v-col>
       </v-row>

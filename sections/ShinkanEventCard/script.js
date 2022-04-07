@@ -17,17 +17,20 @@ export default {
         '女子部員と楽しくおしゃべりしましょう！女子だからこその話が聞けるかも！？',
         '(練習見学会の内容)',
       ]
+      const dateList = ['4月17日', '4月10日＠豊中', '日時未定', '日時未定']
 
       for (let i = 0; i < ncol; i++) {
         const titleSize = titleSizeList[i % titleSizeList.length]
-        const imgIndex = (i % 3) + 1
+        const imgIndex = (i % 4) + 1
         const detail = detailList[i % detailList.length]
+        const date = dateList[i % dateList.length]
 
         cards.push({
           title: `${titleSize}`,
-          imgSrc: require(`@/assets/shinkanjoho/Img/image${imgIndex}.jpg`),
-          btnTxt: `詳しくはこちら`,
+          imgSrc: require(`@/assets/shinkanjoho/Img/img${imgIndex}.jpg`),
+          btnTxt: `詳細`,
           detail: `${detail}`,
+          date: `${date}`,
         })
       }
       return cards

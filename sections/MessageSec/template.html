@@ -1,0 +1,107 @@
+<v-container class="Back px-0" fluid>
+  <v-img :src="imgSrc" class="hidden-sm-and-down">
+    <v-card :class="class1">
+      <div class="txtset">
+        <div class="who"><b>{{ who }}</b>から新入生へメッセージ</div>
+        <div class="txt">{{ txt }}</div>
+      </div>
+    </v-card>
+    <v-row class="row" justify="center" no-gutters>
+      <v-col cols="6" md="3" align="center"
+        ><v-btn
+          class="btn"
+          color="primary"
+          elevation="5"
+          rounded
+          x-large
+          v-on:click="change1"
+          >主将</v-btn
+        ></v-col
+      >
+      <v-col cols="6" md="3" align="center"
+        ><v-btn
+          class="btn"
+          color="primary"
+          elevation="5"
+          rounded
+          x-large
+          v-on:click="change2"
+          >女子主将</v-btn
+        ></v-col
+      >
+      <v-col cols="6" md="3" align="center"
+        ><v-btn
+          class="btn"
+          color="primary"
+          elevation="5"
+          rounded
+          x-large
+          v-on:click="change3"
+          >マネージャー</v-btn
+        ></v-col
+      >
+      <v-col cols="6" md="3" align="center"
+        ><v-btn
+          class="btn"
+          color="primary"
+          elevation="5"
+          rounded
+          x-large
+          v-on:click="change4"
+          >学連員</v-btn
+        ></v-col
+      >
+    </v-row>
+  </v-img>
+
+  <v-img :src="imgSrc2" class="hidden-md-and-up">
+    <v-card :class="class1">
+      <div class="txtset2">
+        <div class="who2"><b>{{ who }}</b>から<br />新入生へメッセージ</div>
+        <div class="txt2">{{ txt }}</div>
+      </div>
+    </v-card>
+    <v-row class="row" justify="center" no-gutters>
+      <v-col cols="6" md="3" align="center"
+        ><v-btn
+          class="btn"
+          color="primary"
+          elevation="5"
+          rounded
+          v-on:click="change1"
+          >主将</v-btn
+        ></v-col
+      >
+      <v-col cols="6" md="3" align="center"
+        ><v-btn
+          class="btn"
+          color="primary"
+          elevation="5"
+          rounded
+          v-on:click="change2"
+          >女子主将</v-btn
+        ></v-col
+      >
+      <v-col cols="6" md="3" align="center"
+        ><v-btn
+          class="btn"
+          color="primary"
+          elevation="5"
+          rounded
+          v-on:click="change3"
+          >マネージャー</v-btn
+        ></v-col
+      >
+      <v-col cols="6" md="3" align="center"
+        ><v-btn
+          class="btn"
+          color="primary"
+          elevation="5"
+          rounded
+          v-on:click="change4"
+          >学連員</v-btn
+        ></v-col
+      >
+    </v-row>
+  </v-img>
+</v-container>
