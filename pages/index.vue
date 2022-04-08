@@ -6,11 +6,9 @@
       <ShinkanjohoSec />
       <ResultCardSec />
       <MemberSec />
-      <GakuRecSec/>
+      <GakuRecSec />
       <QandASec />
-      
     </v-container>
-    
   </div>
 </template>
 
