@@ -1,16 +1,23 @@
 <template>
-  <div class="card my-3" @mouseover="imageChange()" @mouseleave="imageReturn()">
-    <div class="card2">
-      <div :class="class1">
-        <v-layout justify-center>
-          <v-avatar size="100">
-            <v-img :src="imgSrc" />
-          </v-avatar>
-        </v-layout>
-        <small style="text-align: center">{{ txt }}</small>
-        <h3 align="center">{{ name }}</h3>
-      </div>
+  <div class="card my-3">
+    <div class="card">
+      <!-- <div :class="class1"> -->
+      <v-layout justify-center>
+        <v-avatar size="100">
+          <v-img :src="imgSrc" />
+        </v-avatar>
+      </v-layout>
+      <v-row justify="center" class="mt-2 my-auto">
+        <h6 font-family="robot" class="font-weight-black" align="center">
+          {{ name }}
+        </h6>
+      </v-row>
+      <v-row justify="center" class="mx-auto mt-n4">
+        <p font-family="robot" style="text-align: center">{{ txt }}</p>
+      </v-row>
 
+      <!-- </div> -->
+      <!-- 
       <div :class="class2">
         <v-layout justify-center>
           <v-avatar size="100" class="img-hover">
@@ -19,7 +26,7 @@
         </v-layout>
         <small class="pt-3" style="font-weight: bold; text-align: center">{{ name }}</small>
         <small style="text-align: center"><br />{{ txt2 }}</small>
-      </div>
+      </div> -->
     </div>
   </div>
 </template>
@@ -31,10 +38,10 @@ export default {
       type: String,
       default: require('@/assets/gonuxt/img/sample01.jpg'),
     },
-    imgSrc2: {
-      type: String,
-      default: require('@/assets/gonuxt/img/sample02.jpg'),
-    },
+    // imgSrc2: {
+    //   type: String,
+    //   default: require('@/assets/gonuxt/img/sample02.jpg'),
+    // },
     name: {
       type: String,
       default: 'name',
@@ -43,31 +50,31 @@ export default {
       type: String,
       default: 'txt',
     },
-    txt2: {
-      type: String,
-      default: 'txt2',
-    },
+    // txt2: {
+    //   type: String,
+    //   default: 'txt2',
+    // },
   },
   data() {
     return {
-      class1: 'open',
-      class2: 'hidden',
+      // class1: 'open',
+      // class2: 'hidden',
     }
   },
-  methods: {
-    imageChange() {
-      setTimeout(() => {
-        this.class1 = 'hidden'
-        this.class2 = 'open-reverse'
-      }, 250)
-    },
-    imageReturn() {
-      setTimeout(() => {
-        this.class1 = 'open'
-        this.class2 = 'hidden'
-      }, 250)
-    },
-  },
+  // methods: {
+  //   imageChange() {
+  //     setTimeout(() => {
+  //       this.class1 = 'hidden'
+  //       this.class2 = 'open-reverse'
+  //     }, 250)
+  //   },
+  //   imageReturn() {
+  //     setTimeout(() => {
+  //       this.class1 = 'open'
+  //       this.class2 = 'hidden'
+  //     }, 250)
+  //   },
+  // },
 }
 </script>
 
