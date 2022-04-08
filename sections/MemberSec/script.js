@@ -6,8 +6,8 @@ export default {
     return {
       members: [
         {
-          name: '跳躍パート長',
-          txt: '西野祐希',
+          name: '西野祐希',
+          txt: '跳躍パート長',
           imgSrc: require('@/assets/member-img/跳躍.jpg'),
           // txt2: '初めまして，休日は本を読んだり，散歩をしたりします．',
           // imgSrc2: "require('@/assets/gonuxt/img/sample01.jpg')",

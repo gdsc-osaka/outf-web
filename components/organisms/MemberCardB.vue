@@ -9,11 +9,11 @@
       </v-layout>
       <v-row justify="center" class="mt-2 my-auto">
         <h6 font-family="robot" class="font-weight-black" align="center">
-          {{ name }}
+          {{ txt }}
         </h6>
       </v-row>
       <v-row justify="center" class="mx-auto mt-n4">
-        <p font-family="robot" style="text-align: center">{{ txt }}</p>
+        <p font-family="robot" style="text-align: center">{{ name }}</p>
       </v-row>
 
       <!-- </div> -->
