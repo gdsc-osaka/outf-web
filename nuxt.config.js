@@ -3,10 +3,10 @@ import colors from 'vuetify/lib/util/colors'
 const routerBase =
   process.env.DEPLOY_ENV === 'GH_PAGES'
     ? {
-        router: {
-          base: '/outf-web/',
-        },
-      }
+      router: {
+        base: '/outf-web/',
+      },
+    }
     : {}
 const faviconPath =
   process.env.DEPLOY_ENV === 'GH_PAGES'
@@ -112,7 +112,13 @@ export default {
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: ['@/modules/custom-generate.js'],
+  modules: [
+    '@/modules/custom-generate.js',
+    ['@nuxtjs/google-gtag', {
+      id: 'G-N639GBT5J4',
+      debug: false,
+    }]
+  ],
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
   vuetify: {
