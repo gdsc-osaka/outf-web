@@ -1,27 +1,26 @@
 @import '@/assets/styles/app';
-#ass-outf-logo{
-  width :100px;
+#ass-outf-logo {
+  width: 100px;
   height: 100px;
-  
 }
 
 .slide-outer {
   position: relative;
   overflow: hidden;
   width: 100vw;
-  height: calc(80vh - 64px);
+  height: calc(100vh - 64px);
   display: flex;
 }
 
 .slider-inner {
   position: absolute;
   width: 100vw;
-  height: calc(80vh - 64px);
+  height: calc(100vh - 64px);
 }
 
 .slide-img {
   width: 100vw;
-  height: calc(80vh - 64px);
+  height: calc(100vh - 64px);
   object-fit: cover;
 }
 
@@ -115,9 +114,9 @@
 }
 
 p {
-  text-shadow: 1px 2px 5px black; 
+  text-shadow: 1px 2px 5px black;
 }
 
 h1 {
-  text-shadow: 1px 2px 5px black; 
+  text-shadow: 1px 2px 5px black;
 }
