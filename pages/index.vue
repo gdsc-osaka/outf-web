@@ -3,14 +3,13 @@
     <AutoSwitchSec />
     <MessageSec />
     <v-container>
-      <ShinkanjohoSec />
+      <MessageSec />
+      <ShinkanSec />
       <ResultCardSec />
       <MemberSec />
-      <GakuRecSec/>
+      <GakuRecSec />
       <QandASec />
-      
     </v-container>
-    
   </div>
 </template>
 
