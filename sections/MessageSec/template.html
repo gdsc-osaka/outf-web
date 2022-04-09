@@ -1,10 +1,11 @@
-<section class="BackGroundImage">
-  <v-container class="hidden-sm-and-down py-12" fluid>
-    <v-card width="65%" :class="class1" class="mx-auto my-6">
-      <v-container class="pa-10">
-        <div class="who"><b>{{ who }}</b>から新入生へメッセージ</div>
-        <div class="txt">{{ txt }}</div>
-      </v-container>
+<section class="BackGroundImage d-flex align-center">
+  <v-container class="hidden-sm-and-down py-12">
+    <v-card :class="class1" class="mx-auto my-6 pa-10">
+      <div class="who">
+        <b>{{ who }}</b
+        ><small class="secondary--text">から新入生へメッセージ</small>
+      </div>
+      <div class="txt">{{ txt }}</div>
     </v-card>
 
     <v-row class="row" justify="center">
@@ -58,7 +59,11 @@
   <v-container class="hidden-md-and-up py-12" fluid>
     <v-card width="80%" :class="class1" class="mx-auto my-6">
       <v-container class="pa-6">
-        <div class="who2"><b>{{ who }}</b>から<br />新入生へメッセージ</div>
+        <div class="who2">
+          <b>{{ who }}</b>から<br /><small class="secondary--text"
+            >新入生へメッセージ</small
+          >
+        </div>
         <div class="txt2">{{ txt }}</div>
       </v-container>
     </v-card>

@@ -1,6 +1,8 @@
 .BackGroundImage {
   background-image: url(~/assets/message/img/stadium.jpg);
   background-size: cover;
+  background-position: bottom;
+  min-height: 90vh;
 }
 
 .Message {
@@ -40,7 +42,7 @@
 }
 
 .txt {
-  font-size: 1.5vw;
+  font-size: 1.5rem;
   padding: 20px 0;
   white-space: pre-wrap;
   word-wrap: break-word;
@@ -48,7 +50,7 @@
 }
 
 .txt2 {
-  font-size: 2.3vw;
+  // font-size: 2.3vw;
   padding: 10px 0;
   white-space: pre-wrap;
   word-wrap: break-word;
@@ -57,14 +59,16 @@
 
 .who {
   text-align: center;
-  font-size: 2.3vw;
+  font-size: 3rem;
   word-wrap: break-word;
   font-family: 'Zen Old Mincho', serif;
+  font-weight: bolder;
 }
 
 .who2 {
   text-align: center;
-  font-size: 3.5vw;
+  font-size: 2rem;
   word-wrap: break-word;
   font-family: 'Zen Old Mincho', serif;
+  font-weight: bolder;
 }

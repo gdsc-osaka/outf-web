@@ -3,7 +3,6 @@
     <AutoSwitchSec />
     <MessageSec />
     <v-container>
-      <MessageSec />
       <ShinkanSec />
       <ResultCardSec />
       <MemberSec />
