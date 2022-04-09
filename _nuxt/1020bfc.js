@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[13],{392:function(n,e,c){n.exports=c.p+"img/gakuren.e6b7887.jpg"},532:function(n,e,c){"use strict";c.r(e),e.default={name:"GakuRecSec",data:function(){return{imgSrc:c(392)}}}}}]);
