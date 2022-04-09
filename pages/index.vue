@@ -1,6 +1,7 @@
 <template>
   <div>
     <AutoSwitchSec />
+    <MessageSec />
     <v-container>
       <MessageSec />
       <ShinkanSec />
@@ -15,8 +16,8 @@
 <script>
 import GakuRecSec from '../sections/GakuRecSec/GakuRecSec.vue'
 export default {
-  components: { GakuRecSec },
   name: 'IndexPage',
+  components: { GakuRecSec },
 }
 </script>
 
