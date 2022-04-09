@@ -2,7 +2,7 @@
   background-image: url(~/assets/message/img/stadium.jpg);
   background-size: cover;
   background-position: bottom;
-  min-height: 90vh;
+  min-height: calc(100vh - 64px);
 }
 
 .Message {
