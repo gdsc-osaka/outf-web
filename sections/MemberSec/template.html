@@ -7,9 +7,6 @@
         >
           メンバー紹介
         </h2>
-        <p style="text-align: center">
-          陸上部員の具体的な自己ベストを知りたい方はこちらをご覧ください。
-        </p>
       </v-col>
     </v-row>
     <div class="hidden-sm-and-down">
@@ -46,8 +43,6 @@
                   :name="member.name"
                   :txt="member.txt"
                   :imgSrc="member.imgSrc"
-                  :txt2="member.txt2"
-                  :imgSrc2="member.imgSrc2"
                 />
               </v-card>
             </div>
@@ -56,19 +51,31 @@
       </v-sheet>
     </div>
 
+    <v-row justify="center" class="my-auto mt-n16">
+      <v-col cols="2">
+        <v-icon class="hidden-sm-and-up" color="grey" large>
+          mdi-gesture-swipe-horizontal
+        </v-icon>
+      </v-col>
+    </v-row>
     <v-row justify="center" class="text-center" no-gutters>
       <v-col cols="12" sm="6">
-        <div class="mb-2">
+        <div class="mt-7">
           <v-btn
             style="text-transform: none"
             large
             rounded
-            class="white--text"
+            class="white--text text-h6"
             :color="btnColor"
             href="http://www.osaka-u-athlete-club.com/OUTF/member-top/%E9%83%A8%E5%93%A1%E4%B8%80%E8%A6%A7/"
           >
             {{ btnTxt }}
           </v-btn>
+        </div>
+        <div class="mt-1">
+          <p style="text-align: center">
+            陸上部員の具体的な自己ベストを知りたい方はこちらをご覧ください。
+          </p>
         </div>
       </v-col>
     </v-row>
