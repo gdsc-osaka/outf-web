@@ -3,7 +3,7 @@
     <AutoSwitchSec />
     <v-container>
       <MessageSec />
-      <ShinkanjohoSec />
+      <ShinkanSec />
       <ResultCardSec />
       <MemberSec />
       <GakuRecSec />

@@ -35,6 +35,15 @@
               <div class="text-body-1 pa-6">
                 {{ detail }}
               </div>
+              <v-sheet color="secondary lighten-4" class="pa-2" rounded>
+                <p>
+                  {{ dayandtime }}<br />
+                  {{ place }}<br />
+                  <a :href="zoomlink"> {{ zoomlink }} </a><br />
+                  {{ zoomID }}<br />
+                  {{ zoompass }}
+                </p>
+              </v-sheet>
             </v-card-text>
             <v-card-actions class="justify-end">
               <v-btn text @click="dialog.value = false">閉じる</v-btn>
@@ -62,7 +71,7 @@ export default {
     },
     btnTxt: {
       type: String,
-      default: 'See More',
+      default: '詳細',
     },
     link: {
       type: String,
@@ -83,6 +92,26 @@ export default {
     date: {
       type: String,
       default: '4/2',
+    },
+    dayandtime: {
+      type: String,
+      default: '4/17 19:00',
+    },
+    place: {
+      type: String,
+      default: 'here',
+    },
+    zoomlink: {
+      type: String,
+      default: '',
+    },
+    zoomID: {
+      type: String,
+      default: '',
+    },
+    zoompass: {
+      type: String,
+      default: '',
     },
   },
   data: () => ({
