@@ -28,11 +28,11 @@
         </template>
         <template #default="dialog">
           <v-card>
-            <v-toolbar color="primary" dark>
+            <v-toolbar color="primary" dark class="text-h5 font-weight-bold">
               {{ title }}
             </v-toolbar>
-            <v-card-text>
-              <div class="text-body-1 pa-6">
+            <v-card-text class="pb-0">
+              <div class="text-body-1 px-2 py-6">
                 {{ detail }}
               </div>
               <v-sheet color="secondary lighten-4" class="pa-2" rounded>
