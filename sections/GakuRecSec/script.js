@@ -1,6 +1,6 @@
 export default {
     name: "GakuRecSec",
     data: () => ({
-      imgSrc: require("@/assets/gonuxt/img/sample02.jpg"),
+      imgSrc: require("@/assets/outf-img/gaku/gakuren.jpg"),
     }),
   }

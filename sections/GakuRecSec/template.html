@@ -16,30 +16,68 @@
                 詳しくは下のリンクをクリックしてみてください！
 
             </p>
+            <p></p>
             <div class="d-block mt-5">
-              <v-btn
-                 href="https://a1b29b04-923c-44e3-a75c-01f75a64a78e.filesusr.com/ugd/4c88c1_a5c12040d3e94d19b636efc5a5881017.pdf"
-                dark
-                outlined
-                rounded
-                class="lighten-1 font-weight-bold mx-2"
-                color="white "
-                elevation="0"
+
+            <v-btn
+            href="https://a1b29b04-923c-44e3-a75c-01f75a64a78e.filesusr.com/ugd/4c88c1_a5c12040d3e94d19b636efc5a5881017.pdf"
+            color="#9d359d "
+            class="text-h6"
+            dark
+            elevation="3"
+    
+            >
+            学連公式
+           </v-btn>
+            <v-col cols="auto">
+              <v-dialog
+                transition="dialog-bottom-transition"
+                max-width="600"
               >
-              学連公式
-            </v-btn>
-            <h5>主な支給金</h5>
-            <p>・交通費は全額支給</p>
-            <p>・最初に学連のポロシャツとジャージが1枚ずつ支給</p>
-            <p>　・大会中の昼食代500円支給</p>
-            <p>・学連の服装　上は学連のポロシャツ、下は黒ズボン(スキニーやスラックス可)無い場合買うことになるが、レシートを陸部の会計に渡せば、全額返金される。</p>
-            <p>・選手やマネージャーを兼ねて学連員をする場合、ジャージ代や学連登録代は部費から全額支給される。</p>
-           <p>・学連以外が主催する大会の手伝いに行くと、謝礼金が支給される(相場は3000円)</p>
+              
+                <template v-slot:activator="{ on, attrs }">
+                  <p>学連員には支給品があります！詳しくは下のボタンから！！</p>
+                  <v-btn
+                  color="#9d359d "
+                    v-bind="attrs"
+                    v-on="on"
+                    class="text-h6"
+                    dark
+                    elevation="3"
+                  >主な支給金について</v-btn>
+                </template>
+                <template v-slot:default="dialog">
+                  <v-card>
+                    <v-toolbar
+                      color="primary"
+                      dark
+                    >主な支給金</v-toolbar>
+                    <v-card-text>
+                      <div class="text-h6 pa-12">
+                        <p>・交通費は全額支給</p>
+                <p>・最初に学連のポロシャツとジャージが1枚ずつ支給</p>
+                <p>・大会中の昼食代500円支給</p>
+                <p>・学連の服装　上は学連のポロシャツ、下は黒ズボン(スキニーやスラックス可)無い場合買うことになるが、レシートを陸部の会計に渡せば、全額返金される。</p>
+                <p>・選手やマネージャーを兼ねて学連員をする場合、ジャージ代や学連登録代は部費から全額支給される。</p>
+               <p>・学連以外が主催する大会の手伝いに行くと、謝礼金が支給される(相場は3000円)</p>
+                      </div>
+                    </v-card-text>
+                    <v-card-actions class="justify-end">
+                      <v-btn
+                        text
+                        @click="dialog.value = false"
+                      >Close</v-btn>
+                    </v-card-actions>
+                  </v-card>
+                </template>
+              </v-dialog>
+            </v-col>
             </div>
         </div>
-      </v-col>
- 
+        
+      </v-col >
 
+      
       </v-row>
     </v-container>
   </section>
