@@ -1,0 +1,43 @@
+<section class="gnt-sec-3">
+  <v-container>
+    <h2 class="font-weight-bold secondary--text text-h3 text--darken-2">
+      活動内容
+    </h2>
+    <v-timeline :dense="$vuetify.breakpoint.smAndDown">
+      <v-timeline-item
+        v-for="(event, i) in events"
+        :key="i"
+        :color="event.color"
+        small
+        class="event-item"
+      >
+        <template v-slot:opposite>
+          <v-img
+            :src="event.img"
+            max-width="300px"
+            class="event-img"
+            v-if="i%2==0"
+          ></v-img>
+          <span
+            :class="`headline font-weight-bold ${event.color}--text`"
+            v-text="event.month"
+          ></span>
+          <v-img
+            :src="event.img"
+            max-width="300px"
+            class="event-img"
+            v-if="i%2==1"
+          ></v-img>
+        </template>
+        <v-card class="elevation-2 event-card">
+          <v-card-title
+            :class="`headline font-weight-light mb-0 ${event.color}--text`"
+          >
+            {{ event.title }}
+          </v-card-title>
+          <v-card-text> {{ event.text }} </v-card-text>
+        </v-card>
+      </v-timeline-item>
+    </v-timeline>
+  </v-container>
+</section>
