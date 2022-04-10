@@ -1,8 +1,15 @@
 <section class="gnt-sec-2">
-    <h2 class="font-weight-bold d-block secondary--text text-h2 text--darken-2">Q&A</h2>
-    <v-row class="d-flex justify-left align-center ">
-      <v-col cols="12" v-for="qa in questionAnswer"class="my-5" :key="qa.question">
-        <MoleculesQuestionAnswer :question="qa.question" :answer="qa.answer" />
-      </v-col>
-    </v-row>
-  </section>
+  <h2 class="font-weight-bold d-block secondary--text text-h3 text--darken-2">
+    Q&A
+  </h2>
+  <v-row class="d-flex justify-left align-center">
+    <v-col
+      cols="12"
+      v-for="qa in questionAnswer"
+      class="my-5"
+      :key="qa.question"
+    >
+      <MoleculesQuestionAnswer :question="qa.question" :answer="qa.answer" />
+    </v-col>
+  </v-row>
+</section>
