@@ -5,7 +5,13 @@
   <v-sheet>
     <v-slide-group multiple center-active>
       <v-slide-item v-for="item in items" :key="item.name">
-        <v-card class="card-item" color="primary">
+        <v-card
+          class="card-item"
+          color="primary"
+          v-bind:style="{'background-image': 'url(' + item.img + ')'}"
+          :href="item.url"
+        >
+          <!-- <img height="250" :src="item.img"></img> -->
           <v-row class="mx-auto my-auto">
             <v-card-text class="card-text text-h4 font-weight-bold">
               {{ item.name }}
