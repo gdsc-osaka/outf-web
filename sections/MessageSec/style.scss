@@ -1,33 +1,18 @@
-.Back {
-  position: relative;
+.BackGroundImage {
+  background-image: url(~/assets/message/img/stadium.jpg);
+  background-size: cover;
+  background-position: bottom;
+  min-height: calc(100vh - 64px);
 }
 
 .Message {
-  height: 50%;
-  width: 70%;
-
   animation: fadeIn 1s ease 0s 1 normal;
   -webkit-animation: fadeIn 1s ease 0s 1 normal;
-
-  position: absolute;
-  top: 22%;
-  left: 0;
-  right: 0;
-  margin: auto;
 }
 
 .MessageReverse {
-  height: 50%;
-  width: 70%;
-
   animation: fadeIn2 1s ease 0s 1 normal;
   -webkit-animation: fadeIn2 1s ease 0s 1 normal;
-
-  position: absolute;
-  top: 22%;
-  left: 0;
-  right: 0;
-  margin: auto;
 }
 
 @keyframes fadeIn {
@@ -50,17 +35,6 @@
   } /* 終わり */
 }
 
-.row {
-  height: 10%;
-  width: 100%;
-
-  position: absolute;
-  bottom: 15%;
-  left: 0;
-  right: 0;
-  margin: auto;
-}
-
 .btn {
   height: 60%;
   width: 60%;
@@ -68,8 +42,16 @@
 }
 
 .txt {
-  font-size: 1.5vw;
+  font-size: 1.5rem;
   padding: 20px 0;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  font-family: 'Zen Old Mincho', serif;
+}
+
+.txt2 {
+  // font-size: 2.3vw;
+  padding: 10px 0;
   white-space: pre-wrap;
   word-wrap: break-word;
   font-family: 'Zen Old Mincho', serif;
@@ -77,42 +59,16 @@
 
 .who {
   text-align: center;
-  font-size: 2vw;
+  font-size: 3rem;
   word-wrap: break-word;
   font-family: 'Zen Old Mincho', serif;
-}
-
-.txt2 {
-  font-size: 2.3vw;
-  padding: 10px 0;
-  white-space: pre-wrap;
-  word-wrap: break-word;
-  font-family: 'Zen Old Mincho', serif;
+  font-weight: bolder;
 }
 
 .who2 {
   text-align: center;
-  font-size: 3vw;
+  font-size: 2rem;
   word-wrap: break-word;
   font-family: 'Zen Old Mincho', serif;
-}
-
-.txtset {
-  height: 50%;
-  width: 80%;
-  position: absolute;
-  top: 8%;
-  left: 0;
-  right: 0;
-  margin: auto;
-}
-
-.txtset2 {
-  height: 80%;
-  width: 90%;
-  position: absolute;
-  top: 8%;
-  left: 0;
-  right: 0;
-  margin: auto;
+  font-weight: bolder;
 }

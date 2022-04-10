@@ -1,24 +1,22 @@
 <template>
   <div>
     <AutoSwitchSec />
+    <MessageSec />
     <v-container>
-      <MessageSec />
-      <ShinkanjohoSec />
+      <ShinkanSec />
       <ResultCardSec />
       <MemberSec />
-      <GakuRecSec/>
+      <GakuRecSec />
       <QandASec />
-      
     </v-container>
-    
   </div>
 </template>
 
 <script>
 import GakuRecSec from '../sections/GakuRecSec/GakuRecSec.vue'
 export default {
-  components: { GakuRecSec },
   name: 'IndexPage',
+  components: { GakuRecSec },
 }
 </script>
 
