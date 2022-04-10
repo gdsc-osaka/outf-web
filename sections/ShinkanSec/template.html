@@ -1,0 +1,33 @@
+<section class="gnt-sec-2">
+  <v-container fluid>
+    <section class="gnt-sec-3">
+      <h2 class="font-weight-bold secondary--text text-h3 text--darken-2">
+        新歓情報
+      </h2>
+      <v-row
+        class="d-flex justify-center align-center gont-tile-layout-template"
+      >
+        <v-col
+          cols="12"
+          sm="6"
+          md="3"
+          class="pa-md-5"
+          v-for="event in events"
+          :key="event.title"
+        >
+          <MoleculesShinkanjohoCard
+            :imgSrc="event.imgSrc"
+            :date="event.date"
+            :title="event.title"
+            :detail="event.detail"
+            :dayandtime="event.dayandtime"
+            :place="event.place"
+            :zoomlink="event.zoomlink"
+            :zoomID="event.zoomID"
+            :zoompass="event.zoompass"
+          />
+        </v-col>
+      </v-row>
+    </section>
+  </v-container>
+</section>

@@ -3,10 +3,10 @@ import colors from 'vuetify/lib/util/colors'
 const routerBase =
   process.env.DEPLOY_ENV === 'GH_PAGES'
     ? {
-        router: {
-          base: '/outf-web/',
-        },
-      }
+      router: {
+        base: '/outf-web/',
+      },
+    }
     : {}
 const faviconPath =
   process.env.DEPLOY_ENV === 'GH_PAGES'
@@ -21,43 +21,53 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: '%s - OUTF',
-    title: 'OUTF',
+    titleTemplate: '%s',
+    title: '大阪大学陸上部新歓ページ2022',
     htmlAttrs: {
       lang: 'en',
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'OUTF' },
+      {
+        hid: 'description',
+        name: 'description',
+        content:
+          '大阪大学陸上部の新歓ページです。新歓イベントなどの情報を発信しています。',
+      },
       { name: 'format-detection', content: 'telephone=no' },
       {
         hid: 'keywords',
         name: 'keywords',
-        content: 'nuxtjs,web',
+        content: 'Osaka Universit,Track and Field Club',
       },
 
-      { hid: 'og:site_name', property: 'og:site_name', content: 'OUTF' },
+      {
+        hid: 'og:site_name',
+        property: 'og:site_name',
+        content: '大阪大学陸上部新歓ページ2022',
+      },
       { hid: 'og:type', property: 'og:type', content: 'website' },
       {
         hid: 'og:url',
         property: 'og:url',
-        content: 'https://gdsc-osaka.github.io/gonuxt/',
+        content: 'https://gdsc-osaka.github.io/outf-web/',
       },
       {
         hid: 'og:title',
         property: 'og:title',
-        content: 'OUTF - Web Site of OUTF',
+        content: '大阪大学陸上部新歓',
       },
       {
         hid: 'og:description',
         property: 'og:description',
-        content: 'OUTF',
+        content:
+          '大阪大学陸上部の新歓ページです。新歓イベントなどの情報を発信しています。',
       },
       {
         hid: 'og:image',
         property: 'og:image',
-        content: 'https://gdsc-osaka.github.io/v.png',
+        content: 'https://gdsc-osaka.github.io/home.png',
       },
 
       {
@@ -65,7 +75,11 @@ export default {
         name: 'twitter:card',
         content: 'summary_large_image',
       },
-      { hid: 'twitter:site', name: 'twitter:site', content: '@GDSC_osaka' },
+      {
+        hid: 'twitter:site',
+        name: 'twitter:site',
+        content: '@outf_shinkan_22',
+      },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: faviconPath }],
   },
@@ -98,7 +112,13 @@ export default {
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: ['@/modules/custom-generate.js'],
+  modules: [
+    '@/modules/custom-generate.js',
+    ['@nuxtjs/google-gtag', {
+      id: 'G-N639GBT5J4',
+      debug: false,
+    }]
+  ],
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
   vuetify: {
@@ -108,17 +128,17 @@ export default {
       themes: {
         light: {
           primary: '#353d9d',
-          accent: '#9d359d',          
+          accent: '#9d359d',
           secondary: '#676c72',
           info: colors.teal.lighten1,
           warning: '#fbbc04',
           error: colors.deepOrange.accent4,
-          success: '#359d41'
-        }
+          success: '#359d41',
+        },
       },
       options: {
-        customProperties: true
-      }
+        customProperties: true,
+      },
     },
   },
 

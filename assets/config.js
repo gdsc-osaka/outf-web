@@ -1,7 +1,7 @@
 export default {
   brand: {
     name: 'OUTF',
-    nameShort: 'OUTF Web site',
+    nameShort: '大阪大学陸上競技部新歓ページ',
     footer: {
       links: [
         { icon: 'mdi-twitter', link: 'https://twitter.com/' },

@@ -4,9 +4,13 @@
       <v-img class="align-end rounded" :src="imgSrc" :aspect-ratio="12 / 9">
       </v-img>
     </div>
-
-    <v-card-actions class="pa-5">
-      <div class="text-left">
+    <v-card-actions class="pb-0">
+      <v-sheet color="secondary lighten-4" class="px-2" rounded>
+        {{ date }}
+      </v-sheet>
+    </v-card-actions>
+    <v-card-actions class="px-4">
+      <div class="text-left font-weight-bold">
         {{ title }}
       </div>
       <v-dialog transition="dialog-top-transition" max-width="600">
@@ -24,13 +28,22 @@
         </template>
         <template #default="dialog">
           <v-card>
-            <v-toolbar color="primary" dark>
+            <v-toolbar color="primary" dark class="text-h5 font-weight-bold">
               {{ title }}
             </v-toolbar>
-            <v-card-text>
-              <div class="text-body-1 pa-12">
+            <v-card-text class="pb-0">
+              <div class="text-body-1 px-2 py-6">
                 {{ detail }}
               </div>
+              <v-sheet color="secondary lighten-4" class="pa-2" rounded>
+                <p>
+                  {{ dayandtime }}<br />
+                  {{ place }}<br />
+                  <a :href="zoomlink"> {{ zoomlink }} </a><br />
+                  {{ zoomID }}<br />
+                  {{ zoompass }}
+                </p>
+              </v-sheet>
             </v-card-text>
             <v-card-actions class="justify-end">
               <v-btn text @click="dialog.value = false">閉じる</v-btn>
@@ -58,7 +71,7 @@ export default {
     },
     btnTxt: {
       type: String,
-      default: 'See More',
+      default: '詳細',
     },
     link: {
       type: String,
@@ -75,6 +88,30 @@ export default {
     detail: {
       type: String,
       default: 'Hello world!',
+    },
+    date: {
+      type: String,
+      default: '4/2',
+    },
+    dayandtime: {
+      type: String,
+      default: '4/17 19:00',
+    },
+    place: {
+      type: String,
+      default: 'here',
+    },
+    zoomlink: {
+      type: String,
+      default: '',
+    },
+    zoomID: {
+      type: String,
+      default: '',
+    },
+    zoompass: {
+      type: String,
+      default: '',
     },
   },
   data: () => ({
