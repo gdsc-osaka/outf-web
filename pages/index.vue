@@ -4,6 +4,7 @@
     <MessageSec />
     <v-container>
       <ShinkanSec />
+      <ActivitySec />
       <ResultCardSec />
       <MemberSec />
       <GakuRecSec />
