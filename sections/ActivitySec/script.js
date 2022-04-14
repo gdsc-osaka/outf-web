@@ -5,7 +5,7 @@ export default {
         color: 'cyan',
         month: '16:10',
         title: '授業終了、移動開始',
-        text: '再履バス(学内連絡バス)を使っって吹田キャンパスへ移動。コンベンションセンター前で下車し、いざすいらんへ',
+        text: '再履バス(学内連絡バス)を使って吹田キャンパスへ移動。コンベンションセンター前で下車し、いざすいらんへ',
         img: require('@/assets/activity/sairibus.jpg'),
       },
       {
