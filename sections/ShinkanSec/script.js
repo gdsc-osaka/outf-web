@@ -42,10 +42,10 @@ export default {
         },
         {
           imgSrc: require('@/assets/shinkanjoho/Img/img4.jpg'),
-          date: '日時未定',
+          date: '活動日(月・火・水・金・土)',
           title: '練習見学会',
-          detail: '（練習見学会の内容）',
-          dayandtime: '日時：未定',
+          detail: '*新歓Twitter、InstagramのDMや、メールにて予めお問い合わせください！',
+          dayandtime: '活動日(月・火・水・金・土)',
           place: '場所：すいらん（吹田キャンパスグラウンド）',
         },
       ],
