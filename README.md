@@ -22,6 +22,14 @@ $ npm run generate
 
 For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).
 
+To deploy github pages, implement following commands.
+
+```bash
+$ npm run build
+$ npm run generate
+$ npm run deploy
+```
+
 ## 環境構築編
 
 ### VSCode Extention
